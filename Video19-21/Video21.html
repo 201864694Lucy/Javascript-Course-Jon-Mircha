@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+
+<body> 
+    <h1>CURSO DE JAVASCRIPT</h1>
+  <script> //EDITADO POR LUCY :)
+ 
+ 
+
+    /*/Video 21 Arrow Functions 
+
+    const saludar = () => console.log(`Hola a todos`);
+    saludar(); */
+
+     const saludar = nombre => console.log(`Hola ${nombre}`);
+    saludar("Dani");
+ 
+     const sumar = function (a, b) {
+      return a + b;
+    } 
+
+    // const sumar = (a, b) => a + b;
+
+     console.log(sumar(2, 2));
+
+     const funcionDeVariasLineas = () => {
+       console.log("Uno");
+       console.log("Dos");
+       console.log("Tres");
+     }
+
+     funcionDeVariasLineas();
+
+     const numeros = [1, 2, 3, 4];
+
+     numeros.forEach((el, index) => console.log(`${el} esta en la posición ${index}`));
+
+  
+       function Perro() {
+        console.log(this);
+      }
+
+      Perro(); 
+
+        const perro = {
+          nombre: "yina",
+          ladrar() {
+            console.log(this)
+          }
+        }
+
+        perro.ladrar(); 
+
+     </script>
+</body>
+
+</html>

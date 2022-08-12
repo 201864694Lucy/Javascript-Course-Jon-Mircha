@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+
+<body> 
+    <h1>CURSO DE JAVASCRIPT</h1>
+  <script> //EDITADO POR LUCY :)
+
+
+    //Video 31. Expresiones Regulares
+    /*
+     Expresiones Regulares
+        Son una secuencia de caracteres que forma un patrón de búsqueda, principalmente utilizada para la búsqueda de patrones de cadenas de caracteres.
+    */
+
+     let cadena = "horno. Padre Lobo, que había pasado todo el día durmiendo, se despertó. Se rascó, bostezó y fue estirando una tras otra las patas. Quería desprenderse de todo el sopor y la rigidez que se había acumulado en ellas. Madre Loba estaba echada.";
+
+     let expReg = new RegExp("se", "ig");
+     console.log(expReg.test(cadena));
+     console.log(expReg.exec(cadena));
+
+     let expReg2 = /se{1,}/ig;
+     console.log(expReg2.test(cadena));
+     console.log(expReg2.exec(cadena)); 
+
+
+  </script>
+</body>
+
+</html>

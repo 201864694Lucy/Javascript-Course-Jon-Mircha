@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+
+<body> 
+    <h1>CURSO DE JAVASCRIPT</h1>
+  <script> //EDITADO POR LUCY :)
+
+ //Video 22. Prototipos
+//aqui empieza mi codigo
+    /*
+    Clases: Modelo a seguir.
+    Objetos: Es una instancia de una clase
+    Atributos: es una característica o propiedad del objeto (son variables dentro de un objeto)
+    Métodos:son las acciones que un objeto puede realizar (son funciones dentro de un objeto)
+     */
+
+    /* const animal = {
+      nombre: "Snoopy",
+      sonar() {
+        console.log("Hago sonidos por que estoy vivo");
+      }
+    }
+
+    const animal2 = {
+      nombre: "Lola Bunny",
+      sonar() {
+        console.log("Hago sonidos por que estoy vivo");
+      }
+    }
+
+    console.log(animal);
+    console.log(animal2); */  
+
+    function Animal(nombre, genero){
+      //Atributos de la funcion
+      this.nombre = nombre;
+      this.genero = genero;
+      //Metodo
+      this.sonar = function(){
+        console.log("Hago sonidos porque estoy vivo");
+
+      }
+      this.saludar = function () {
+      console.log(`Hola me llamo ${this.nombre}`);
+          }
+        }
+    
+
+//Función constructora donde asignamos los métodos al Prototipo, no a la función como tal
+   
+    function Animal(nombre, genero){
+      //Atributos de la funcion
+      this.nombre = nombre;
+      this.genero = genero;
+    }
+  
+      //los metodo se sacan de la funcion y se agregan al prototipo de la funcion
+      Animal.prototype.sonar = function(){
+        console.log("Hago sonidos porque estoy vivo");
+
+      }
+      Animal.prototype.saludar = function () {
+      console.log(`Hola me llamo ${this.nombre}`);
+          }
+
+    const snoopy =new Animal("Snoopy","Macho"),
+    lolabuny =new Animal("lolabuny","Hembra");
+    console.log(snoopy);
+    console.log(lolabuny);
+  
+    snoopy.sonar();
+    snoopy.saludar();
+
+    lolabuny.sonar();
+    lolabuny.saludar();
+
+
+  </script>
+</body>
+
+</html>
