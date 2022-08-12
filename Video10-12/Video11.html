@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+
+<body> 
+    <h1>CURSO DE JAVASCRIPT</h1>
+  <script> //EDITADO POR LUCY :)
+  
+
+
+    //Video 11 Arreglos (Arrays)
+
+        const a = [];
+        const b = [1, true, "hola", ["a", "b", [1, 2]]];
+        console.log(a);
+        console.log(b);
+        console.log(b.length);
+        console.log(b[2]);
+        console.log(b[0]);
+        console.log(b[3]);
+        console.log(b[3][1]);
+        console.log(b[3][2][0]);
+
+        const c = Array.of("a", "b", "c", 2, 3, 4);
+        console.log(c);
+
+        const d = Array(10).fill(false);
+        console.log(d);
+
+        const e = new Array();
+        console.log(e);
+
+        const f = new Array(1, 2, 3, true, false);
+        console.log(f);
+
+        const colores = ["morado", "azul", "negro"];
+        console.log(colores);
+
+        colores.push("verde");
+        console.log(colores);
+
+        colores.pop();
+        console.log(colores);
+
+        colores.forEach(function (el, index) {
+          console.log(`<li id="${index}">${el}</li>`);
+        }); 
+
+
+  </script>
+</body>
+
+</html>

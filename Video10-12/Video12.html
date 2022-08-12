@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+
+<body> 
+    <h1>CURSO DE JAVASCRIPT</h1>
+  <script> //EDITADO POR LUCY :)
+ 
+ 
+    //Video 12 Objetos 
+
+    const b = {}
+    console.log(b);
+
+    const c = new Object();
+    console.log(c);
+
+    /* dentro de un objeto a las variables se le van a llamar atributos/propiedades y 
+    a las funciones se les llama métodos */
+         const lucy = {
+          nombre: "Lucy",
+          apellido: "Palacios",
+          edad:22,
+          pasatiempos: ["leer", "ver peliculas", "escuchar musica"],
+          soltera: true,
+          contacto: {
+            email: "noelionerom@gmail.com",
+            telefono: "243 126 5923"
+          },
+          saludar: function () {
+            console.log(`:)`)
+          },
+          decirMiNombre: function () {
+            console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años y me puedes llamar al numero ${this.contacto.telefono} en twitter.`)
+          }
+        }
+
+        console.log(lucy);
+        console.log(lucy["nombre"]);
+        console.log(lucy["apellido"]);
+        console.log(lucy.nombre);
+        console.log(lucy.apellido);
+        console.log(lucy.edad);
+        console.log(lucy.soltero);
+        console.log(lucy.pasatiempos);
+        console.log(lucy.pasatiempos[1]);
+        console.log(lucy.contacto);
+        console.log(lucy.contacto.telefono);
+        lucy.saludar();
+        lucy.decirMiNombre();
+
+        console.log(Object.keys(lucy));
+        console.log(Object.values(lucy));
+        console.log(lucy.hasOwnProperty("nombre"));
+        console.log(lucy.hasOwnProperty("nacimiento"));
+
+
+
+  </script>
+</body>
+
+</html>
