@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+
+<body> 
+    <h1>CURSO DE JAVASCRIPT</h1>
+  <script> //EDITADO POR LUCY :)
+
+
+    //Video 16 Manejo de Errores 
+     try {
+       console.log("En el Try se agrega el código a evaluar");
+       noExiste;
+       console.log("Segundo mensaje en el try");
+     } catch (error) {
+       console.log("Catch, captura cualquier error surgido o lanzado en el try");
+       console.log(error);
+     } finally {
+       console.log("El bloque finally se ejecutará siempre al final de unbloque try-catch");
+     }
+
+
+     try {
+       let numero = "y";
+
+       if (isNaN(numero)) {
+         throw new Error("El caractér introducido no es un Número");
+       }
+
+       console.log(numero * numero);
+     } catch (error) {
+       console.log(`Se ah producido el siguiente: ${error}`);
+     }   
+  </script>
+</body>
+
+</html>
